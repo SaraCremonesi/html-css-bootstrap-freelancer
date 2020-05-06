@@ -1,0 +1,203 @@
+/* GENERAL */
+body {
+ padding-top: 70px;
+ font-size: 16px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+h1 {
+  margin: 10px auto;
+  font-weight: bold;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+#contact-me input , textarea {
+  border: none;
+  border-bottom: 1px solid lightgrey;
+  width: 100%;
+  padding: 20px 0;
+  margin: 10px 0;
+}
+
+.ms_wrapper60 {
+  width: 60%;
+  margin: 10px auto;
+}
+
+/* SECTIONS */
+.ms_section {
+  padding: 40px 0;
+}
+
+.ms_green {
+  color: white;
+  background-color: #1abc9c;
+}
+
+.ms_darkblue {
+  color: #333;
+  background-color: white;
+}
+
+
+/* COMPONENTS */
+.ms_navbar {
+  background-color: #2c3e50;
+  line-height: 70px;
+  color: white;
+}
+
+.ms_logo {
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+.ms_menu ul {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.ms_menu li {
+  display: inline-block;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.ms_menu li:last-child {
+  margin-right: 0;
+}
+
+.ms_burger-menu {
+  line-height: 70px;
+}
+
+.ms_heading img {
+  max-height: 200px;
+}
+
+.ms_intro  {
+  margin-bottom: 10px;
+}
+
+.ms_job {
+  font-size: 1.5em;
+}
+
+.ms_divisor {
+  margin: 0 auto;
+}
+
+.ms_divisor i {
+  margin: 20px;
+  font-size: 2em;
+}
+
+.ms_divisor::before , .ms_divisor::after {
+  content: "";
+  display: inline-block;
+  width: 100px;
+  height: 3.5px;
+  background-color: white;
+  margin-bottom: 8px;
+  border-radius: 5px;
+}
+
+.ms_darkblue .ms_divisor::before , .ms_darkblue .ms_divisor::after {
+  background-color: #2c3e50;
+}
+
+.ms_darkblue i , .ms_darkblue h2 {
+  color: #2c3e50;
+}
+
+.ms_box {
+  margin-bottom: 30px;
+}
+
+.ms_box img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+#about p {
+  margin-bottom: 7%;
+}
+
+.ms_download {
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-top: 3.5%;
+  background-color: #1abc9c;
+  border: 1px solid white;
+}
+
+.ms_button {
+  margin: 10px 0;
+  background-color: #1abc9c;
+  padding: 10px 15px;
+  font-size: 20px;
+  border: none;
+  color: white;
+}
+
+footer {
+  background-color: #3a546d;
+  text-align: center;
+  color: white;
+}
+
+footer a {
+  color: #1abc9c;
+}
+
+ .ms_icons {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  line-height: 50px;
+  border-radius: 100%;
+  border: 1px solid white;
+  margin-right: 10px;
+  color: white;
+}
+
+.ms_icons:last-child {
+  margin-right: 0;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 992px) {
+  .ms_icons {
+    font-size: 20px;
+    width: 43px;
+    height: 43px;
+    line-height: 40px;
+  }
+}
+
+/* m.query to adjust divisor alignment
+in about section */
+@media screen and (max-width: 500px) {
+  .ms_divisor::before , .ms_divisor::after {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 3.5px;
+    background-color: white;
+    margin-bottom: 8px;
+    border-radius: 5px;
+  }
+
+  .ms_logo {
+    font-size: 13px;
+  }
+}
